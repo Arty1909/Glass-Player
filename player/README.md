@@ -1,1 +1,0 @@
-Flutter audio player with a clean glass-style UI. Supports Android, iOS, Web, Windows, macOS, and Linux. Features: play/pause/seek, next/prev, shuffle & repeat modes, playlist management, local library import (files/folders), metadata reading (tags/artwork), and offline persistence via Hive. Background/media controls via audio_service.

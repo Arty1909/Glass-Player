@@ -1,0 +1,18 @@
+<IfModule mod_mime.c>
+  AddType application/wasm .wasm
+
+  <FilesMatch "\.wasm$">
+    ForceType application/wasm
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.wasm$">
+    Header set Content-Type "application/wasm"
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  <FilesMatch "^(index\.html|flutter_bootstrap\.js|main\.dart\.js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

@@ -1,30 +1,85 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
-.packages
+.flutter-plugins-dependencies
+.pub-cache/
 .pub/
-build/
-.flutter-plugins
-.flutter-plugins-dependencies
+/build/
+/coverage/
 
-**/Flutter/ephemeral/
-**/Flutter/Generated.xcconfig
-**/flutter_export_environment.sh
-**/generated_plugin_registrant.*
-**/generated_plugins.cmake
+# Symbolication related
+app.*.symbols
 
-*.iml
-.idea/
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Generated local state and caches
+.codex_backups/
 .vscode/
-.dart_tool/
-build/
-.flutter-plugins
-.flutter-plugins-dependencies
-**/.dart_tool/
-**/build/
-**/Flutter/ephemeral/
-**/Flutter/Generated.xcconfig
-**/flutter_export_environment.sh
-**/generated_plugin_registrant.*
-**/generated_plugins.cmake
-*.iml
-.idea/
-.vscode/
+**/ephemeral/
+**/.gradle/
+**/.kotlin/
+**/Pods/
+**/local.properties
+**/key.properties
+plugins/flutter_media_metadata/example/
+plugins/flutter_media_metadata/pubspec.lock
+
+# Accidental nested Flutter project under android/
+/android/android/
+/android/ios/
+/android/lib/
+/android/linux/
+/android/macos/
+/android/test/
+/android/web/
+/android/windows/
+
+# Private configuration and release artifacts
+.env
+.env.*
+!.env.example
+*.apk
+*.aab
+*.zip
+*.jks
+*.keystore
+*.pem
+*.p12
+*.pfx
+*.p8
+*.mobileprovision
+*.provisionprofile
+google-services.json
+GoogleService-Info.plist
